@@ -3,7 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bundesländer</title>
+    <script src="json.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="icon" type="image/x-icon" href="./img/germany.png" />
   </head>
-  <body></body>
+  <body onload="init()">
+    <div class="allContent">
+      <h1>Bundesländer</h1>
+      <div id="statesGallery" class="statesGallery"></div>
+      <div id="letterGallery" class="letterGallery"></div>
+    </div>
+  </body>
 </html>

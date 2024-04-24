@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'PT Sans';
+}
+.allContent{
+    width: 1024px;
+}
+.allContent h1{
+    background: rgba(0, 0, 0, 0.15);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    padding-left: 40px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.statesGallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.singleStates{
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: calc(33.33333% - 10px);
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+.singleStates h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button h3{
+    margin: 0px;
+}
+.letterGallery{
+    margin-left: 5px;
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+button{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+}
+@media (max-width: 1024px) {
+    .allContent{
+        width: 800px
+    }
+}
+@media (max-width: 800px) {
+    .singleStates{
+        width: calc(50% - 10px);
+    }
+    .allContent{
+        width: 500px
+    }
+}
+@media (max-width: 500px) {
+    .singleStates{
+        width: calc(100% - 10px);
+        min-width: none;
+    }
+    .allContent{
+        width: 300px
+    }
+}
